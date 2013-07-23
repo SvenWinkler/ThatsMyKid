@@ -25,23 +25,16 @@
 <template name="gallery">
 	<div id="gallery">
 		<p>This is my kids gallery: picture 1 picture 2 picture 3</p>
-		<div id="controls"></div>
-		<div id="loading"></div>
-		<div id="slideshow"></div>
-		<div id="caption"></div>
-		<div id="thumbs">
-		    <ul class="thumbs noscript">
-		        <li>
-		            <a class="thumb" name="optionalCustomIdentifier" href="path/to/slide" title="your image title">
-		                <img src="pic1.jpg" alt="your image title again for graceful degradation" />
-		            </a>
-		            <div class="caption">
+		
+		<div id="thumb">
+			<img id="thumb" src="pic1.jpg" alt="picture one" />
+			<img id="thumb" src="pic1.jpg" alt="picture one" />
+			<img id="thumb" src="pic1.jpg" alt="picture one" />
+			<img id="thumb" src="pic1.jpg" alt="picture one" />
+		</div>
+		<div class="caption">
 		                (Any html can go here)
-		            </div>
-		        </li>
-		        ... (repeat for every image in the gallery)
-		    </ul>
-		 </div>
+		</div>
 	</div>
 </template>
 

@@ -40,3 +40,9 @@ body {
 	border: 0px solid black;
 	padding: 35px;
 }
+
+#thumb {
+	position: relative;
+	width: 150px;
+	height: 150px;
+}
