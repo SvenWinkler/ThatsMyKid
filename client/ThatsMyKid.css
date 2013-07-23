@@ -68,10 +68,28 @@ body {
 }
 
 
-#event-thumb {
+img.event-thumb {
 	position:relative; top:5px; left:25px;
 	float: left;
 	width: 150px;
 	height: 150px;
 	padding: 3px;
+}
+
+#transparent_layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 100;
+}
+
+#photo_box {
+    position: relative;
+    text-align: center;
+    padding-top: 100px;
+    visibility: hidden;
+    z-index: 1000;
 }
