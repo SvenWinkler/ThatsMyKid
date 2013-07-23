@@ -1,0 +1,42 @@
+/* CSS declarations go here */
+
+body {
+	background-color : white;
+}
+
+#banner {
+	position: absolute;   
+	height: 5px; width: 100%;    
+	left: 0px; top: 9px; right: 0px; 
+	font-family: arial, sans-serif;
+	font-style: italic;
+	background-color : #ebebe3;
+	font-size : 20pt;
+	border: 0px solid black;
+	padding: 35px;
+}
+
+
+#gallery {
+	position: absolute;   
+	height: 300px; width: 100%;    
+	left: 0px; top: 100px; right: 0px; 
+	font-family: arial, sans-serif;
+	background-color : #b3ebe3;
+	font-size : 8pt;
+	border: 0px solid black;
+	padding: 35px;
+}
+
+
+#footer {
+	position: absolute;   
+	height: 5px; width: 100%;    
+	left: 0px; bottom: 9px; right: 0px; 
+	font-family: arial, sans-serif;
+	font-style: italic;
+	background-color : #ebebe3;
+	font-size : 8pt;
+	border: 0px solid black;
+	padding: 35px;
+}
