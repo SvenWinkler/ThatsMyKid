@@ -1,8 +1,12 @@
 <head>
   <title>ThatsMyKid</title>
+    <script type="text/javascript" src="jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="jquery.ui.core.min.js"></script>
 </head>
 
 <body>
+    <div id="transparent_layer"></div>
+    <div id="photo_box"><img src="walking.jpg" alt="picture one" /></div>
   {{> banner}}
   {{> login}}
   {{> gallery}}
@@ -28,9 +32,9 @@
 
 <template name="gallery">
 	<div id="gallery">	
-		<a href="walking.jpg">
+		<div id="walking">
 			<img id="status-thumb" src="walking.jpg" alt="picture one" />
-		</a>
+		</div>
 		<a href="swimming.jpg">
 			<img id="event-thumb" src="swimming.jpg" alt="picture one" />
 		</a>
