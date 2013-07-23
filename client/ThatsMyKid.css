@@ -68,7 +68,7 @@ body {
 }
 
 
-#event-thumb {
+img.event-thumb {
 	position:relative; top:5px; left:25px;
 	float: left;
 	width: 150px;
