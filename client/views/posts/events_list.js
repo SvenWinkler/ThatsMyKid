@@ -1,4 +1,4 @@
-var postsData = [ 
+var eventsData = [ 
 {
 	url: 'swimming.jpg'
 },
@@ -62,5 +62,5 @@ var postsData = [
 ];
 
 
-Template.postsList.helpers({ posts: postsData
+Template.eventsList.helpers({ events: eventsData
 });
