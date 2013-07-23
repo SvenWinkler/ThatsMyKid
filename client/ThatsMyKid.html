@@ -1,15 +1,10 @@
 <head>
   <title>ThatsMyKid</title>
-    <script type="text/javascript" src="js/jquery-1.3.2.js"></script>
-    <script type="text/javascript" src="js/jquery.galleriffic.js"></script>
-
-    <!-- Optionally include jquery.history.js for history support -->
-    <script type="text/javascript" src="js/jquery.history.js"></script>
-    <script type="text/javascript" src="js/jquery.opacityrollover.js"></script>
 </head>
 
 <body>
   {{> banner}}
+  {{> login}}
   {{> gallery}}
   {{> footer}}
 </body>
@@ -17,24 +12,87 @@
 
 <template name="banner">
 	<div id="banner">
+		<a href="logo.jpg">
+			<img id="logo" src="logo.jpg" alt="picture one" />
+		</a>
   		{{greeting}}
   	</div>
 </template>
 
+<template name="login" >
+	<div id="login-button" class="start">
+		<button id="start" class="btn"><i class="icon-user"></i> Login</button>
+	</div>
+</template>
+
 
 <template name="gallery">
-	<div id="gallery">
-		<p>This is my kids gallery: picture 1 picture 2 picture 3</p>
+	<div id="gallery">	
+		<a href="walking.jpg">
+			<img id="status-thumb" src="walking.jpg" alt="picture one" />
+		</a>
+		<a href="swimming.jpg">
+			<img id="event-thumb" src="swimming.jpg" alt="picture one" />
+		</a>
+		<a href="art.jpg">
+			<img id="event-thumb" src="art.jpg" alt="picture one" />
+		</a>
+		<a href="driving.jpg">
+			<img id="event-thumb" src="driving.jpg" alt="picture one" />
+		</a>
+		<a href="painting.jpg">
+			<img id="event-thumb" src="painting.jpg" alt="picture one" />
+		</a>
+		<a href="hugging.jpg">
+			<img id="event-thumb" src="hugging.jpg" alt="picture one" />
+		</a>
+		<a href="looking.jpg">
+			<img id="event-thumb" src="looking.jpg" alt="picture one" />
+		</a>
+		<a href="babysleeping.jpg">
+			<img id="event-thumb" src="babysleeping.jpg" alt="picture one" />
+		</a>
+		<a href="climbing.jpg">
+			<img id="event-thumb" src="climbing.jpg" alt="picture one" />
+		</a>
+		<a href="playing.jpg">
+			<img id="event-thumb" src="playing.jpg" alt="picture one" />
+		</a>
+		<a href="thinking.jpg">
+			<img id="event-thumb" src="thinking.jpg" alt="picture one" />
+		</a>
+		<a href="swimming.jpg">
+			<img id="event-thumb" src="swimming.jpg" alt="picture one" />
+		</a>
+		<a href="art.jpg">
+			<img id="event-thumb" src="art.jpg" alt="picture one" />
+		</a>
+		<a href="driving.jpg">
+			<img id="event-thumb" src="driving.jpg" alt="picture one" />
+		</a>
+		<a href="painting.jpg">
+			<img id="event-thumb" src="painting.jpg" alt="picture one" />
+		</a>
+		<a href="hugging.jpg">
+			<img id="event-thumb" src="hugging.jpg" alt="picture one" />
+		</a>
+		<a href="looking.jpg">
+			<img id="event-thumb" src="looking.jpg" alt="picture one" />
+		</a>
+		<a href="babysleeping.jpg">
+			<img id="event-thumb" src="babysleeping.jpg" alt="picture one" />
+		</a>
+		<a href="climbing.jpg">
+			<img id="event-thumb" src="climbing.jpg" alt="picture one" />
+		</a>
+		<a href="playing.jpg">
+			<img id="event-thumb" src="playing.jpg" alt="picture one" />
+		</a>
+		<a href="thinking.jpg">
+			<img id="event-thumb" src="thinking.jpg" alt="picture one" />
+		</a>
+	</div>
 		
-		<div id="thumb">
-			<img id="thumb" src="pic1.jpg" alt="picture one" />
-			<img id="thumb" src="pic1.jpg" alt="picture one" />
-			<img id="thumb" src="pic1.jpg" alt="picture one" />
-			<img id="thumb" src="pic1.jpg" alt="picture one" />
-		</div>
-		<div class="caption">
-		                (Any html can go here)
-		</div>
 	</div>
 </template>
 
