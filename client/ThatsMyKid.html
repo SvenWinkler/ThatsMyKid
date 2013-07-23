@@ -2,6 +2,13 @@
   <title>ThatsMyKid</title>
     <script type="text/javascript" src="jquery-1.9.1.js"></script>
     <script type="text/javascript" src="jquery.ui.core.min.js"></script>
+	<script type="text/javascript">
+	  (function() {
+	    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	    po.src = 'https://apis.google.com/js/plusone.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  })();
+	</script>    
 </head>
 
 <body>
@@ -44,6 +51,7 @@
 
 <template name="footer">
 	<div id="footer">
-	<a href="impressum.html">Impressum</a> / 
-	<a href="#" id="button">Kontakt</a></div>
+	<div class="g-follow" data-annotation="bubble" data-height="20" data-href="https://plus.google.com/105967116019649965198" data-rel="publisher"></div>
+	<a href="impressum.html">Impressum</a> 
+	</div>
 </template>
