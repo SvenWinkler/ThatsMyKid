@@ -13,9 +13,6 @@ Visibility.bindClickHandlers = function() {
     $('#photo_viewer').on('click', function() {
         Visibility.hidePhoto()
     })
-//    $('#missingfeature_viewer').on('click', function() {
-//        Visibility.hideEMail()
-//    })
 }
 
 Visibility.showPhoto = function(url, comment) {
