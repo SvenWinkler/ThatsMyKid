@@ -117,6 +117,17 @@ body {
     visibility: hidden;
 }
 
+#email_box {
+    position: relative;
+    text-align: center;
+    z-index: 1000;
+    top:100px;
+    left:35%;
+    background-color: white;
+    max-height: 80%;
+    max-width: 30%;
+}
+
 .event-name {
     font-size: 14pt;
     color: #000000;
