@@ -101,3 +101,13 @@ img.event-thumb {
 #photo_viewer {
     visibility: hidden;
 }
+
+#photo_comment {
+	position: relative;
+	text-align: center;
+	z-index: 1200;
+	color: white;  
+	top: 20px;
+	left: 10%;
+	width: 80%;
+}
