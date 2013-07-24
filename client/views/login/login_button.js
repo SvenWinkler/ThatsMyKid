@@ -16,5 +16,5 @@ Template.loginButton.events(
 ButtonEvents = {}
 
 ButtonEvents.showEMail = function() {
-    $('#email_viewer').css("visibility", "visible");
+    $('#missingfeature_viewer').css("visibility", "visible");
 }

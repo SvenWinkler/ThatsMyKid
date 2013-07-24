@@ -13,7 +13,7 @@ Visibility.bindClickHandlers = function() {
     $('#photo_viewer').on('click', function() {
         Visibility.hidePhoto()
     })
-    $('#email_viewer').on('click', function() {
+    $('#missingfeature_viewer').on('click', function() {
         Visibility.hideEMail()
     })
 }
@@ -32,5 +32,5 @@ Visibility.hidePhoto = function() {
 
 Visibility.hideEMail = function() {
     "use strict";
-    $('#email_viewer').css("visibility", "hidden")
+    $('#missingfeature_viewer').css("visibility", "hidden")
 }

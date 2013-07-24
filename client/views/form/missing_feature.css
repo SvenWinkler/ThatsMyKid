@@ -1,4 +1,4 @@
-#email_box {
+#missingfeature_box {
     position: relative;
     text-align: center;
     z-index: 1000;
@@ -10,7 +10,7 @@
     padding: 5px;
 }
 
-#email_viewer {
+#missingfeature_viewer {
     position:absolute;
     top:0px;
     left:0px;
