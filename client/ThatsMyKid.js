@@ -26,9 +26,9 @@ Visibility.hidePhoto = function() {
     $('#photo_viewer').css("visibility", "hidden")
 }
 
-Template.banner.greeting = function () {
+/*Template.banner.greeting = function () {
     return "ThatsMyKid";
-}
+}*/
 
 /*
 Template.hello.events({
