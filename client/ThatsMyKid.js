@@ -18,9 +18,10 @@ Visibility.bindClickHandlers = function() {
     })
 }
 
-Visibility.showPhoto = function(url) {
+Visibility.showPhoto = function(url, comment) {
     "use strict";
     $('#photo_box_img').attr("src", url);
+    $('#photo_comment').text(comment);
     $('#photo_viewer').css("visibility", "visible");
 }
 

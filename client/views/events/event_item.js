@@ -8,7 +8,7 @@
 Template.eventItem.events(
     {
         'click': function(e) {
-            Visibility.showPhoto(e.target.src)
+            Visibility.showPhoto(e.target.src, e.target.title)
         }
     }
 );
