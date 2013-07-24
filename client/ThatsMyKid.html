@@ -1,43 +1,48 @@
 <head>
-<title>ThatsMyKid</title>
-<script type="text/javascript" src="jquery-1.9.1.js"></script>
-<script type="text/javascript" src="jquery.ui.core.min.js"></script>
+  <title>ThatsMyKid</title>
+    <script type="text/javascript" src="jquery-1.9.1.js"></script>
 </head>
 
 <body>
-	<div id="transparent_layer"></div>
-	<div id="photo_box">
-		<img src="walking.jpg" alt="picture one" />
-	</div>
-	{{> banner}} {{> login}} {{> gallery}} {{> footer}}
+  {{> photobox}}
+  {{> banner}}
+  {{> login}}
+  {{> gallery}}
+  {{> footer}}
 </body>
 
-
-<template name="banner">
-<div id="banner">
-	<a href="logo.jpg"> <img id="logo" src="logo.jpg" alt="picture one" />
-	</a> {{greeting}}
-</div>
+<template name="photobox">
+    <div id="photo_viewer">
+        <div id="transparent_layer"></div>
+        <div id="photo_box"><img id="photo_box_img" src="walking.jpg" alt="picture one" /></div>
+    </div>
 </template>
 
-<template name="login">
-<div id="login-button" class="start">
-	<button id="start" class="btn">
-		<i class="icon-user"></i> Login
-	</button>
-</div>
+<template name="banner">
+	<div id="banner">
+		<a href="logo.jpg">
+			<img id="logo" src="logo.jpg" alt="picture one" />
+		</a>
+  		{{greeting}}
+  	</div>
+</template>
+
+<template name="login" >
+	<div id="login-button" class="start">
+		<button id="start" class="btn"><i class="icon-user"></i> Login</button>
+	</div>
 </template>
 
 
 <template name="gallery">
-<div id="gallery">
-	<div id="walking">
-		<img id="status-thumb" src="sitting.jpg" alt="picture one" />
+	<div id="gallery">	
+		<div id="walking">
+			<img id="status-thumb" src="walking.jpg" alt="picture one" />
+		</div>
+		<div>{{> eventsList}}</div>
 	</div>
-	<div>{{> eventsList}}</div>
-</div>
-
-</div>
+		
+	</div>
 </template>
 
 
