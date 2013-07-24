@@ -14,6 +14,7 @@ body {
 	font-size : 20pt;
 	border-bottom: solid black 1px;
 	padding: 10px;
+    padding-top:15px;
 	z-index: 5;
 }
 
@@ -27,7 +28,7 @@ body {
 #login-button {
 	z-index: 6;
 	position: fixed;
-	right: 3px; top: 5px;
+	right: 3px; top: 8px;
 }
 
 
