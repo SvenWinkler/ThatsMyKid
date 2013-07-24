@@ -1,6 +1,7 @@
 <head>
   <title>ThatsMyKid</title>
     <script type="text/javascript" src="jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="jquery.ui.core.min.js"></script>
 </head>
 
 <body>
@@ -10,7 +11,6 @@
   {{> login}}
   {{> gallery}}
   {{> footer}}
-  <a href="https://plus.google.com/105967116019649965198" rel="publisher">Google+</a>
 </body>
 
 
@@ -32,69 +32,10 @@
 
 <template name="gallery">
 	<div id="gallery">	
-		<div id="status">
+		<div id="walking">
 			<img id="status-thumb" src="walking.jpg" alt="picture one" />
 		</div>
-		<div>
-			<img class="event-thumb" src="swimming.jpg" alt="picture one" />
-        </div>
-        <div>
-			<img class="event-thumb" src="art.jpg" alt="picture one" />
-        </div>
-        <div>
-			<img class="event-thumb" src="driving.jpg" alt="picture one" />
-        </div>
-        <div>
-			<img class="event-thumb" src="painting.jpg" alt="picture one" />
-        </div>
-        <div>
-			<img class="event-thumb" src="hugging.jpg" alt="picture one" />
-        </div>
-        <div>
-			<img class="event-thumb" src="looking.jpg" alt="picture one" />
-        </div>
-        <div>
-			<img class="event-thumb" src="babysleeping.jpg" alt="picture one" />
-        </div>
-        <div>
-			<img class="event-thumb" src="climbing.jpg" alt="picture one" />
-        </div>
-        <div>
-			<img class="event-thumb" src="playing.jpg" alt="picture one" />
-        </div>
-        <div>
-			<img class="event-thumb" src="thinking.jpg" alt="picture one" />
-        </div>
-        <div>
-			<img class="event-thumb" src="swimming.jpg" alt="picture one" />
-        </div>
-        <div>
-			<img class="event-thumb" src="art.jpg" alt="picture one" />
-        </div>
-        <div>
-			<img class="event-thumb" src="driving.jpg" alt="picture one" />
-        </div>
-        <div>
-			<img class="event-thumb" src="painting.jpg" alt="picture one" />
-        </div>
-        <div>
-			<img class="event-thumb" src="hugging.jpg" alt="picture one" />
-        </div>
-        <div>
-			<img class="event-thumb" src="looking.jpg" alt="picture one" />
-        </div>
-        <div>
-			<img class="event-thumb" src="babysleeping.jpg" alt="picture one" />
-        </div>
-        <div>
-			<img class="event-thumb" src="climbing.jpg" alt="picture one" />
-        </div>
-        <div>
-			<img class="event-thumb" src="playing.jpg" alt="picture one" />
-        </div>
-        <div>
-			<img class="event-thumb" src="thinking.jpg" alt="picture one" />
-        </div>
+		<div>{{> eventsList}}</div>
 	</div>
 		
 	</div>
