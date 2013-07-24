@@ -68,15 +68,6 @@ body {
 	padding: 3px;
 }
 
-
-img.event-thumb {
-	position:relative; top:5px; left:25px;
-	float: left;
-	width: 150px;
-	height: 150px;
-	padding: 3px;
-}
-
 #transparent_layer {
     position: absolute;
     width: 100%;
@@ -101,3 +92,36 @@ img.event-thumb {
 #photo_viewer {
     visibility: hidden;
 }
+
+.event-name {
+    font-size: 14pt;
+    color: #000000;
+    position:relative;
+    bottom:30px;
+    left:10px;
+    background-color: #ffffff;
+    opacity: 0.7;
+}
+
+.event {
+    position:relative; top:5px; left:25px;
+    float: left;
+    width: 150px;
+    height: 150px;
+    padding: 3px;
+}
+
+img.event-thumb {
+    position:relative;
+    /*width: 100%;*/
+    width: 150px;
+    height: 150px;
+}
+
+/*img.event-thumb {
+    position:relative; top:5px; left:25px;
+    float: left;
+    width: 150px;
+    height: 150px;
+    padding: 3px;
+}*/
