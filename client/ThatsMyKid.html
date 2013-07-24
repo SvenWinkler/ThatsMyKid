@@ -1,18 +1,23 @@
 <head>
   <title>ThatsMyKid</title>
     <script type="text/javascript" src="jquery-1.9.1.js"></script>
-    <script type="text/javascript" src="jquery.ui.core.min.js"></script>
+    <!--<script type="text/javascript" src="jquery.ui.core.min.js"></script>-->
 </head>
 
 <body>
-    <div id="transparent_layer"></div>
-    <div id="photo_box"><img src="walking.jpg" alt="picture one" /></div>
+  {{> photobox}}
   {{> banner}}
   {{> login}}
   {{> gallery}}
   {{> footer}}
 </body>
 
+<template name="photobox">
+    <div id="photo_viewer">
+        <div id="transparent_layer"></div>
+        <div id="photo_box"><img id="photo_box_img" src="walking.jpg" alt="picture one" /></div>
+    </div>
+</template>
 
 <template name="banner">
 	<div id="banner">
