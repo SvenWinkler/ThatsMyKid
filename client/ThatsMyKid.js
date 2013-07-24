@@ -25,17 +25,3 @@ Visibility.hidePhoto = function() {
     "use strict";
     $('#photo_viewer').css("visibility", "hidden")
 }
-
-/*Template.banner.greeting = function () {
-    return "ThatsMyKid";
-}*/
-
-/*
-Template.hello.events({
-  'click input' : function () {
-      "use strict";
-    // template data, if any, is available in 'this'
-    if (typeof console !== 'undefined')
-      console.log("You pressed the button");
-  }
-})*/
