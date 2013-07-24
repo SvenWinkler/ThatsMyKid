@@ -85,9 +85,9 @@ var eventsData = [
 	event: 'Kindergarten'
 },
 {
-	url: 'painting.jpg',
-	comment: 'By Jim Pennucci from Hope, USA (Painting) [CC-BY-2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons',
-	event: 'Kindergarten'
+    url: 'drawing.jpg',
+    comment: 'By Eden (Tooth Fairy) [CC-BY-2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons',
+    event: '1. Bild'
 },
 {
 	url: 'climbing.jpg',
