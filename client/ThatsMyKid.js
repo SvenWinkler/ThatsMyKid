@@ -13,6 +13,9 @@ Visibility.bindClickHandlers = function() {
     $('#photo_viewer').on('click', function() {
         Visibility.hidePhoto()
     })
+    $('#email_viewer').on('click', function() {
+        Visibility.hideEMail()
+    })
 }
 
 Visibility.showPhoto = function(url, comment) {
@@ -27,16 +30,7 @@ Visibility.hidePhoto = function() {
     $('#photo_viewer').css("visibility", "hidden")
 }
 
-/*Template.banner.greeting = function () {
-    return "ThatsMyKid";
-}*/
-
-/*
-Template.hello.events({
-  'click input' : function () {
-      "use strict";
-    // template data, if any, is available in 'this'
-    if (typeof console !== 'undefined')
-      console.log("You pressed the button");
-  }
-})*/
+Visibility.hideEMail = function() {
+    "use strict";
+    $('#email_viewer').css("visibility", "hidden")
+}

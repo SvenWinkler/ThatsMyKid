@@ -5,6 +5,7 @@
 
 <body>
   {{> photobox}}
+  {{> emailbox}}
   {{> banner}}
   {{> login}}
   {{> gallery}}
@@ -13,12 +14,18 @@
 
 <template name="photobox">
     <div id="photo_viewer">
-        <div id="transparent_layer"></div>
+        <div class="transparent_layer"></div>
         <div id="photo_box">
         	<img id="photo_box_img" src="walking.jpg" alt="picture one" />
         	<div id="photo_comment">This is a comment</div>
         </div>
+    </div>
+</template>
 
+<template name="emailbox">
+    <div id="email_viewer">
+        <div class="transparent_layer"></div>
+        <div id="email_box">TODO</div>
     </div>
 </template>
 
@@ -33,7 +40,7 @@
 
 <template name="login" >
 	<div id="login-button" class="start">
-		<button id="start" class="btn"><i class="icon-user"></i> Login</button>
+		{{> loginButton}}
 	</div>
 </template>
 
