@@ -1,58 +1,57 @@
 <head>
-  <title>ThatsMyKid</title>
-    <script type="text/javascript" src="jquery-1.9.1.js"></script>
-    <script type="text/javascript" src="jquery.ui.core.min.js"></script>
-	<script type="text/javascript">
-	  (function() {
-	    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-	    po.src = 'https://apis.google.com/js/plusone.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-	  })();
-	</script>    
+<title>ThatsMyKid</title>
+<script type="text/javascript" src="jquery-1.9.1.js"></script>
+<script type="text/javascript" src="jquery.ui.core.min.js"></script>
 </head>
 
 <body>
-    <div id="transparent_layer"></div>
-    <div id="photo_box"><img src="walking.jpg" alt="picture one" /></div>
-  {{> banner}}
-  {{> login}}
-  {{> gallery}}
-  {{> footer}}
+	<div id="transparent_layer"></div>
+	<div id="photo_box">
+		<img src="walking.jpg" alt="picture one" />
+	</div>
+	{{> banner}} {{> login}} {{> gallery}} {{> footer}}
 </body>
 
 
 <template name="banner">
-	<div id="banner">
-		<a href="logo.jpg">
-			<img id="logo" src="logo.jpg" alt="picture one" />
-		</a>
-  		{{greeting}}
-  	</div>
+<div id="banner">
+	<a href="logo.jpg"> <img id="logo" src="logo.jpg" alt="picture one" />
+	</a> {{greeting}}
+</div>
 </template>
 
-<template name="login" >
-	<div id="login-button" class="start">
-		<button id="start" class="btn"><i class="icon-user"></i> Login</button>
-	</div>
+<template name="login">
+<div id="login-button" class="start">
+	<button id="start" class="btn">
+		<i class="icon-user"></i> Login
+	</button>
+</div>
 </template>
 
 
 <template name="gallery">
-	<div id="gallery">	
-		<div id="walking">
-			<img id="status-thumb" src="walking.jpg" alt="picture one" />
-		</div>
-		<div>{{> eventsList}}</div>
+<div id="gallery">
+	<div id="walking">
+		<img id="status-thumb" src="walking.jpg" alt="picture one" />
 	</div>
-		
-	</div>
+	<div>{{> eventsList}}</div>
+</div>
+
+</div>
 </template>
 
 
 <template name="footer">
-	<div id="footer">
-		all pictures are under public or creative commons licence via <a href="http://commons.wikimedia.org/">Wikimedia</a> - annotation will follow <br /> 
-	<div class="g-follow" data-annotation="bubble" data-height="20" data-href="https://plus.google.com/105967116019649965198" data-rel="publisher"></div>
-	<a href="impressum.html">Impressum</a> 
-	</div>
+<div id="footer">
+	all pictures are under public or creative commons licence via <a
+		href="http://commons.wikimedia.org/">Wikimedia</a> - annotation will
+	follow <br />
+	<div class="g-follow" data-annotation="bubble" data-height="20"
+		data-href="https://plus.google.com/105967116019649965198"
+		data-rel="publisher"></div>
+	<div class="fb-follow"
+		data-href="https://www.facebook.com/pages/Thatsmykid/1375038446050243"
+		data-layout="button_count" data-show-faces="false" data-width="450"></div>
+	<a href="impressum.html">Impressum</a>
+</div>
 </template>
