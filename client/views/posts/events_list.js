@@ -5,18 +5,18 @@ var eventsData = [
 	event: '1. Urlaub'
 },
 {
-	url: 'thinking.jpg',
-	comment: '',
+	url: 'smiling.jpg',
+	comment: 'By jayhay2336 (P1000392) [CC-BY-SA-2.0 (http://creativecommons.org/licenses/by-sa/2.0)], via Wikimedia Commons',
 	event: 'Geburtstag'
 },
 {
 	url: 'hugging.jpg',
-	comment: '',
+	comment: 'By Jason Regan (fell in the pool) [CC-BY-2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons',
 	event: '1. Zähne'
 },
 {
 	url: 'art.jpg',
-	comment: '',
+	comment: 'By NID chick (Flickr: Child Artist) [CC-BY-2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons',
 	event: 'Geburtstag'
 },
 {
@@ -26,12 +26,12 @@ var eventsData = [
 },
 {
 	url: 'babysleeping.jpg',
-	comment: '',
+	comment: 'By Tamil1510 (Own work) [CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons',
 	event: 'Geburt'
 },
 {
 	url: 'looking.jpg',
-	comment: '',
+	comment: 'By Alex Proimos from Sydney, Australia (Mothers Child) [CC-BY-2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons',
 	event: 'Kindergarten'
 },
 {
@@ -46,27 +46,27 @@ var eventsData = [
 },
 {
 	url: 'playing.jpg',
-	comment: '',
+	comment: 'By Francisco Farias Jr [Public domain], via Wikimedia Commons',
 	event: 'Geburtstag'
 },
 {
-	url: 'exploring.jpg',
-	comment: 'Walter De Maria, Vertical Earth Kilometer in Kassel, Germany. Own picture, taken 1997. Child, my daughter, is two years old at time photo was taken.',
-	event: '1. Urlaub'
+	url: 'drawing.jpg',
+	comment: 'By Eden (Tooth Fairy) [CC-BY-2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons',
+	event: '1. Bild'
 },
 {
-	url: 'thinking.jpg',
-	comment: '',
+	url: 'smiling.jpg',
+	comment: 'By jayhay2336 (P1000392) [CC-BY-SA-2.0 (http://creativecommons.org/licenses/by-sa/2.0)], via Wikimedia Commons',
 	event: 'Geburtstag'
 },
 {
 	url: 'hugging.jpg',
-	comment: '',
+	comment: 'By Jason Regan (fell in the pool) [CC-BY-2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons',
 	event: '1. Zähne'
 },
 {
 	url: 'art.jpg',
-	comment: '',
+	comment: 'By NID chick (Flickr: Child Artist) [CC-BY-2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons',
 	event: 'Geburtstag'
 },
 {
@@ -76,12 +76,12 @@ var eventsData = [
 },
 {
 	url: 'babysleeping.jpg',
-	comment: '',
+	comment: 'By Tamil1510 (Own work) [CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons',
 	event: 'Geburt'
 },
 {
 	url: 'looking.jpg',
-	comment: '',
+	comment: 'By Alex Proimos from Sydney, Australia (Mothers Child) [CC-BY-2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons',
 	event: 'Kindergarten'
 },
 {
@@ -96,7 +96,7 @@ var eventsData = [
 },
 {
 	url: 'playing.jpg',
-	comment: '',
+	comment: 'By Francisco Farias Jr [Public domain], via Wikimedia Commons',
 	event: 'Geburtstag'
 }
 ];
