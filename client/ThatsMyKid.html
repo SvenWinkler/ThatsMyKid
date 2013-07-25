@@ -35,7 +35,10 @@
 			<img style="padding-right: 10px;" id="logo" src="logo.jpg" alt="picture one" />
 		</div>
   		<div>ThatsMyKid</div>
+        {{#if currentUser}}
+        {{else}}
         <img style="position:absolute; top:5px; left:200px; width:300px;" src="img/sicher-einfach-etc.png"/>
+        {{/if}}
   	</div>
 </template>
 
@@ -53,7 +56,7 @@
 		{{#if loggingIn}}
 		<!-- do nothing or show a smilie -->
 		{{else}}
-			<div id="gallery">
+			<div class="gallery">
 				<div id="walking">
 					<img id="status-thumb" src="sitting1.jpg" alt="picture one" />
 		            <img style="position:absolute; bottom:0px; left:300px; width:300px; z-index:50;" src="img/status-bubble.png"/>
@@ -61,8 +64,7 @@
 				</div>
 				<div>{{> eventsList}}</div>
 			</div>
-			<div>{{> eventsList}}</div>
-		</div>
+		{{/if}}
 	{{/if}}
 </template>
 
