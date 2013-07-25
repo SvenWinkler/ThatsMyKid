@@ -31,3 +31,4 @@ Visibility.hidePhoto = function() {
 //    "use strict";
 //    $('#missingfeature_viewer').css("visibility", "hidden")
 //}
+//}

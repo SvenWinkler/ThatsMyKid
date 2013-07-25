@@ -32,7 +32,7 @@ body {
 }
 
 
-#gallery {
+.gallery {
 	position: absolute;   
 	height: 70%; width: 100%;    
 	left: 0px; top: 60px; right: 0px;
@@ -68,17 +68,15 @@ body {
 	padding: 3px;
 }
 
-#picture_dropzone {
-    position:absolute; top:5px; left:25px;
+.dropzone {
+    position:relative; top:5px; left:25px;
     float: left;
     width: 306px;
     height: 306px;
-    margin: 0px;
-    /*margin-right: 3px;*/
-    /*border-style: solid;*/
-    /*border-width: 5px;*/
-    /*border-color: lightgray;*/
-    z-index: 30;
+    padding: 3px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: lightgray;
 }
 
 .transparent_layer {
