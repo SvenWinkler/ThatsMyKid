@@ -9,7 +9,7 @@
   {{> missingfeaturebox}}
   {{> banner}}
   {{> login}}
-  {{> gallery}}
+  {{> bodyInhalt}}
   {{> footer}}
 </body>
 
@@ -47,21 +47,24 @@
 </template>
 
 
-<template name="gallery">
-	<div id="gallery">
-		<div id="walking">
-            <form action="/file-upload"
-                  class="dropzone"
-                  id="picture_dropzone">
-            </form>
-			<img id="status-thumb" src="sitting1.jpg" alt="picture one" />
-            <img style="position:absolute; bottom:0px; left:300px; width:300px; z-index:50;" src="img/status-bubble.png"/>
-            <img style="position:absolute; bottom:70px; right:210px; width:200px; z-index:50;" src="img/special_events.png"/>
+<template name="bodyInhalt">
+	{{#if currentUser}} 
+    <form action="/file-upload"
+                              class="dropzone"
+                              id="picture_dropzone">
+        
+                              </form>
+		{{> userBereich}}
+	{{else}}
+		<div id="gallery">
+			<div id="walking">
+				<img id="status-thumb" src="sitting1.jpg" alt="picture one" />
+	            <img style="position:absolute; bottom:0px; left:300px; width:300px; z-index:50;" src="img/status-bubble.png"/>
+	            <img style="position:absolute; bottom:70px; right:210px; width:200px; z-index:50;" src="img/special_events.png"/>
+			</div>
+			<div>{{> eventsList}}</div>
 		</div>
-		<div>{{> eventsList}}</div>
-	</div>
-		
-	</div>
+	{{/if}}
 </template>
 
 

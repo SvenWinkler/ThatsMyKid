@@ -27,7 +27,7 @@ Visibility.hidePhoto = function() {
     $('#photo_viewer').css("visibility", "hidden")
 }
 
-Visibility.hideEMail = function() {
-    "use strict";
-    $('#missingfeature_viewer').css("visibility", "hidden")
-}
+//Visibility.hideEMail = function() {
+//    "use strict";
+//    $('#missingfeature_viewer').css("visibility", "hidden")
+//}
