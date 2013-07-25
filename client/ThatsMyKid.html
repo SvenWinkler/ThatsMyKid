@@ -1,6 +1,6 @@
 <head>
   <title>ThatsMyKid</title>
-    <script src="jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="jquery-1.9.1.js"></script>
 </head>
 
 <body>
@@ -35,10 +35,7 @@
 			<img style="padding-right: 10px;" id="logo" src="logo.jpg" alt="picture one" />
 		</div>
   		<div>ThatsMyKid</div>
-        {{#if currentUser}}
-        {{else}}
         <img style="position:absolute; top:5px; left:200px; width:300px;" src="img/sicher-einfach-etc.png"/>
-        {{/if}}
   	</div>
 </template>
 
@@ -51,15 +48,18 @@
 
 <template name="bodyInhalt">
 	{{#if currentUser}}
-    <div class="gallery">
 		{{> userBereich}}
-    </div>
 	{{else}}
-		<div class="gallery">
-			<div id="walking">
-				<img id="status-thumb" src="sitting1.jpg" alt="picture one" />
-	            <img style="position:absolute; bottom:0px; left:300px; width:300px; z-index:50;" src="img/status-bubble.png"/>
-	            <img style="position:absolute; bottom:70px; right:210px; width:200px; z-index:50;" src="img/special_events.png"/>
+		{{#if loggingIn}}
+		<!-- do nothing or show a smilie -->
+		{{else}}
+			<div id="gallery">
+				<div id="walking">
+					<img id="status-thumb" src="sitting1.jpg" alt="picture one" />
+		            <img style="position:absolute; bottom:0px; left:300px; width:300px; z-index:50;" src="img/status-bubble.png"/>
+		            <img style="position:absolute; bottom:70px; right:210px; width:200px; z-index:50;" src="img/special_events.png"/>
+				</div>
+				<div>{{> eventsList}}</div>
 			</div>
 			<div>{{> eventsList}}</div>
 		</div>
