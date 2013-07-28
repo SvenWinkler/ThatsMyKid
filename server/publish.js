@@ -1,3 +1,13 @@
+Pictures = new Meteor.Collection("pictures");
+
 Meteor.startup(function () {
-    // code to run on server at startup
+    Meteor.publish("pictures", function () {
+        return Pictures.find();
+    });
+    Pictures.allow({
+        insert: function(userId,doc){
+            return true;
+        }
+    })
 });
+

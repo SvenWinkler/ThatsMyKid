@@ -60,7 +60,7 @@ body {
 }
 
 
-#status-thumb {
+.status-thumb {
 	position:relative; top:5px; left:25px; 
 	float: left;
 	width: 306px;
