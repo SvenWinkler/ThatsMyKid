@@ -5,13 +5,12 @@
  * Time: 15:25
  * To change this template use File | Settings | File Templates.
  */
-
 Pictures = new Meteor.Collection("pictures");
 
 Meteor.subscribe("pictures");
 
 Template.userBereich.pics = function() {
-    return Pictures.find({}, {sort: {$natural:-1}});
+    return Pictures.find({userId : Meteor.userId()}, {sort: {$natural:-1}});
 }
 
 Template.userBereich.events(
@@ -35,7 +34,23 @@ Template.userBereich.events(
 
             reader.onload = function(event) {
                 $('#preview').attr('src', event.target.result);
+
+/*                var maxImageWidth = 100;
+                var maxImageHeight = 100;
+
+                var canvas = document.createElement('canvas');
+                canvas.width = maxImageWidth;
+                canvas.height = maxImageHeight;
+
+                var ctx = canvas.getContext("2d");
+                alert("Test4");
+                ctx.drawImage(event.target.result, 0, 0, maxImageWidth, maxImageHeight);
+
+                alert("Test5");
+                var finalFile = canvas.toDataURL(files[0].type);*/
+
                 Pictures.insert({
+                    userId: Meteor.userId(),
                     name : files[0].name,
                     data : event.target.result
                 });
